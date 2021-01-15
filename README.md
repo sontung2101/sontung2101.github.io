@@ -1,4 +1,4 @@
-<h1>Flexton is an ultra-minimalist and responsive theme for Jekyll</h1>
+<!-- <h1>Flexton is an ultra-minimalist and responsive theme for Jekyll</h1>
 
 <p>Flexton created especially for those who appreciate minimalism and functionality.</p>
 <p>Amazing flexibility with pleasant colors and custom design makes Flexton a simple theme, suitable for almost any blog.</p>
@@ -37,7 +37,7 @@ Check the theme in action [Demo](https://flexton.netlify.com/)
   <li><a href="https://jquery.com/">jQuery.com</a></li>
   <li><a href="https://github.com/christian-fei/Simple-Jekyll-Search">Simple-Jekyll-Search</a></li>
   <li>Preview Images form <a href="https://unsplash.com/">unsplash.com</a>, <a href="https://www.pexels.com/">pexels.com</a></li>
-</ul>
+</ul> -->
 
 <h2>Deployment</h2>
 
@@ -45,8 +45,8 @@ To run the theme locally, navigate to the theme directory and run `bundle instal
 
 I would recommend checking the [Deployment Methods](https://jekyllrb.com/docs/deployment-methods/) page on Jekyll website.
 
-<h2>Buy me a coffee</h2>
+<!-- <h2>Buy me a coffee</h2>
 
 <p>If you want to show your appreciation, buy me one <a href="https://www.buymeacoffee.com/artemsheludko" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a> ! Every five cups of coffee and a new theme for Jekyll is ready 😋</p>
 <p>Either way, your support is a way to thank me ❤️</p>
-<p align="center"><b>Thank you for your support!</b></p>
+<p align="center"><b>Thank you for your support!</b></p> -->
