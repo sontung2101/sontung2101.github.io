@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Deploy Django + EC2 + S3 + Nginx + Gunicorn +Ubuntu server"
-date: 2021-02-01 11:11:18 +0700
+date: 2021-02-01 11:12:18 +0700
 image: ec2.jpg
 tags: [Django, Deploy]
 categories: Django
