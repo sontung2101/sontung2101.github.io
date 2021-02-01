@@ -1,0 +1,35 @@
+I"�<ul>
+  <li><strong>Bài viết là tổng hợp những kiến thức căn bản về Vuejs</strong></li>
+  <li>SPA : sử dụng vuejs tốc độ load trang sẽ nhanh hơn rất nhiều so với bình thường sử dụng server side do ko cần load lại dữ liệu ko cần thiết, chỉ load lại dữ liệu mới ,đối với những dữ liệu ít thay đổi sẽ được giữ lại</li>
+  <li>VSCode , NodeJS(cài nodejs sẽ includes cả npm(Node package manager:quản lý những mã nguồn gói hỗ trợ riêng của nodejs ở bên ngoài , sử dụng ở npm trong vuejs) ),Git</li>
+  <li>VueInstance (thực thể Vue , đối tượng Vue)</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">&lt;</span><span class="n">a</span> <span class="n">v</span><span class="o">-</span><span class="n">bind</span><span class="ss">:href</span> <span class="o">=</span><span class="s2">"url"</span><span class="o">&gt;&lt;</span><span class="sr">/a&gt; </span></code></pre></figure>
+<p>v-bind =&gt; khi muốn dùng dữ liệu dàng buộc vào các thuộc tính của HTML thì dùng</p>
+<ul>
+  <li>toán tử 3 ngôi đơn giản</li>
+</ul>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">ok</span> <span class="p">?</span> <span class="s1">'yes'</span><span class="p">:</span><span class="s1">'no'</span></code></pre></figure>
+
+<ul>
+  <li>Numberformat Javascript :</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">   <span class="n">const</span> <span class="n">number</span> <span class="o">=</span> <span class="mf">123456.789</span><span class="p">;</span>  
+   <span class="n">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="n">new</span> <span class="no">Intl</span><span class="o">.</span><span class="no">NumberFormat</span><span class="p">(</span><span class="s1">'de-DE'</span><span class="p">,</span> <span class="p">{</span> <span class="ss">style: </span><span class="s1">'currency'</span><span class="p">,</span> <span class="ss">currency: </span><span class="s1">'VND'</span> <span class="p">}).</span><span class="nf">format</span><span class="p">(</span><span class="n">number</span><span class="p">));</span></code></pre></figure>
+
+<ul>
+  <li>Event v-on :</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">   <span class="o">&lt;</span><span class="n">button</span> <span class="n">v</span><span class="o">-</span><span class="n">on</span><span class="ss">:click</span> <span class="o">=</span> <span class="s2">"handleClick"</span><span class="o">&gt;</span><span class="no">Click</span> <span class="n">me</span> <span class="o">&lt;</span><span class="sr">/button&gt;
+    methods:{
+              handleClick(event){
+              console.log(this)
+              this.count +=1
+                }
+            }</span></code></pre></figure>
+
+<p><span style="color:red">NOTE</span><strong>: khi tạo sự kiên cần chuyền 1 biến mặc định vào là event , đối tượng this sẽ được lấy đối tượng vuejs hiện tại </strong></p>
+:ET

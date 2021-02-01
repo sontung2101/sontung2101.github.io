@@ -1,0 +1,141 @@
+I"2&<ul>
+  <li><strong>Bài viết là tổng hợp những kiến thức căn bản về Vuejs</strong></li>
+  <li>SPA : sử dụng vuejs tốc độ load trang sẽ nhanh hơn rất nhiều so với bình thường sử dụng server side do ko cần load lại dữ liệu ko cần thiết, chỉ load lại dữ liệu mới ,đối với những dữ liệu ít thay đổi sẽ được giữ lại</li>
+  <li>VSCode , NodeJS(cài nodejs sẽ includes cả npm(Node package manager:quản lý những mã nguồn gói hỗ trợ riêng của nodejs ở bên ngoài , sử dụng ở npm trong vuejs) ),Git</li>
+  <li>VueInstance (thực thể Vue , đối tượng Vue)</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">&lt;</span><span class="n">a</span> <span class="n">v</span><span class="o">-</span><span class="n">bind</span><span class="ss">:href</span> <span class="o">=</span><span class="s2">"url"</span><span class="o">&gt;&lt;</span><span class="sr">/a&gt; </span></code></pre></figure>
+<p>v-bind =&gt; khi muốn dùng dữ liệu dàng buộc vào các thuộc tính của HTML thì dùng</p>
+<ul>
+  <li>toán tử 3 ngôi đơn giản</li>
+</ul>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">ok</span> <span class="p">?</span> <span class="s1">'yes'</span><span class="p">:</span><span class="s1">'no'</span></code></pre></figure>
+
+<ul>
+  <li>Numberformat Javascript :</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">   <span class="n">const</span> <span class="n">number</span> <span class="o">=</span> <span class="mf">123456.789</span><span class="p">;</span>  
+   <span class="n">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="n">new</span> <span class="no">Intl</span><span class="o">.</span><span class="no">NumberFormat</span><span class="p">(</span><span class="s1">'de-DE'</span><span class="p">,</span> <span class="p">{</span> <span class="ss">style: </span><span class="s1">'currency'</span><span class="p">,</span> <span class="ss">currency: </span><span class="s1">'VND'</span> <span class="p">}).</span><span class="nf">format</span><span class="p">(</span><span class="n">number</span><span class="p">));</span></code></pre></figure>
+
+<ul>
+  <li>Event v-on :</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">   <span class="o">&lt;</span><span class="n">button</span> <span class="n">v</span><span class="o">-</span><span class="n">on</span><span class="ss">:click</span> <span class="o">=</span> <span class="s2">"handleClick"</span><span class="o">&gt;</span><span class="no">Click</span> <span class="n">me</span> <span class="o">&lt;</span><span class="sr">/button&gt;
+    methods:{
+              handleClick(event){
+              console.log(this)
+              this.count +=1
+                }
+            }</span></code></pre></figure>
+
+<p><span style="color:red">NOTE</span><strong>: khi tạo sự kiên cần chuyền 1 biến mặc định vào là event , đối tượng this sẽ được lấy đối tượng vuejs hiện tại </strong></p>
+
+<ul>
+  <li>Event Modifiers:
+    <ul>
+      <li>v-on:submit.prevent : sẽ ko chuyển trang dựa vào action trong form mà ở lại trang hiện tại</li>
+      <li>v-on:mousemove.stop : sẽ ko cập nhật giá trị ở cha mà chỉ cập nhật ở đối tượng con . đối tượng trực tiếp hover</li>
+    </ul>
+  </li>
+  <li>Key Modifiers:
+    <ul>
+      <li>v-on.keyup.enter=”submit” : nhấn key enter sẽ submit</li>
+      <li>Javascript keycode : lây số kí tự</li>
+    </ul>
+  </li>
+  <li>Computed và methods tương đối giống nhau đều là viết hàm nhưng Computed ko cần dấu () còn methods thì ngược lại,Computed tính toán dựa trên đối tượng,dữ liệu có sẵn của vuejs</li>
+  <li>“v-model”: dùng để ràng buộc dữ liệu 2 chiều giữa data và input
+    <ul>
+      <li>vd : v-model =”name”</li>
+    </ul>
+  </li>
+  <li>ràng buộc class bằng Vuejs:
+    <ul>
+      <li>isActive : false</li>
+      <li>iseEror : true</li>
+    </ul>
+  </li>
+  <li>v-if=”a” v-else=”b”</li>
+  <li>Vòng lặp :
+    <ul>
+      <li>v-for = “item in items”</li>
+    </ul>
+  </li>
+  <li>v-html=’’ :render dữ liệu dưới dạng HTML ,</li>
+</ul>
+
+<p>——————————-<strong>CLI(command line interface)</strong>——————— <br />
+Vuejs template webpack
+-hãy chắc chắn rằng đã cài nodejs(include npm)</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="err">$</span> <span class="n">npm</span> <span class="n">install</span> <span class="o">-</span><span class="n">g</span> <span class="n">vue</span><span class="o">-</span><span class="n">cli</span>
+<span class="err">$</span> <span class="n">vue</span> <span class="n">init</span> <span class="n">webpack</span> <span class="n">my</span><span class="o">-</span><span class="n">project</span> <span class="p">(</span><span class="n">vue</span> <span class="n">init</span> <span class="n">webpack</span><span class="o">-</span><span class="n">simple</span> <span class="n">helloVuejs</span><span class="p">)</span> <span class="p">:</span> <span class="n">n</span><span class="err">ê</span><span class="n">n</span> <span class="n">s</span><span class="err">ử</span> <span class="n">d</span><span class="err">ụ</span><span class="n">ng</span> <span class="n">simple</span>
+<span class="err">$</span> <span class="n">cd</span> <span class="n">my</span><span class="o">-</span><span class="n">project</span>
+<span class="err">$</span> <span class="n">npm</span> <span class="n">install</span> <span class="p">(</span><span class="n">c</span><span class="err">à</span><span class="n">i</span> <span class="n">node_modules</span><span class="p">)</span>
+<span class="err">$</span> <span class="n">npm</span> <span class="n">run</span> <span class="n">dev</span></code></pre></figure>
+
+<p>———– <strong>ví dụ</strong> ————–<br />
+To get started:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">    <span class="n">cd</span> <span class="no">HelloVuejs</span>
+    <span class="n">npm</span> <span class="n">install</span>
+    <span class="n">npm</span> <span class="n">run</span> <span class="n">dev</span></code></pre></figure>
+
+<p>———————————-<br /></p>
+<ul>
+  <li>Cấu trúc project,tìm hiểu về webpack
+    <ul>
+      <li>package.json : là nơi khai báo cái thư viện , modul ở ngoài mà cần sử dụng cho project</li>
+      <li>Development : là môi trường cho lập trình viên code , test Computed</li>
+      <li>Production : là môi trường cho người dùng .</li>
+      <li>babel : là một trình biên dịch của Javascript (ES6) , biên dịch cú pháp sang các mã nguồn khác nhau</li>
+      <li>Webpack : là công cụ đóng gói code, đóng gói mã nguồn</li>
+      <li>npm run build
+  +làm việc chính trong file src</li>
+      <li>cài Vetur trong editor code</li>
+    </ul>
+  </li>
+  <li>component : là các thành phần của 1 page được chia ra .</li>
+  <li>Props : Những data truyền từ component cha vào component con , cú pháp giống thuốc tính
+    <ul>
+      <li>sử dụng v-bind: để ràng buộc thuộc tính
+<br />
+<strong>Thay đổi dữ liệu từ component Cha , tránh việc thay đổi dữ liệu trực tiếp tại component con,đối với for if trong vuejs ko nên sử dụng cùng lúc . vì sẽ chạy vòng for trước . nên ta sẽ dùng hàm if trước lấy dữ liệu clearn rồi mới for ra .</strong> <br />
+———–<strong>Props Down - Event Up</strong>——————-<br /></li>
+    </ul>
+  </li>
+  <li>Props Down : chuyền dữ liệu từ cha vào con -&gt; thằng con chỉ được sài thôi , không được trực tiếp thay đổi .</li>
+  <li>Event Up : Truyền thông điệp (truyền sự kiện) thông báo cho component cha biết là nó muốn thay đổi dữ liệu -&gt; Nhiệm vụ của Component cha là nhận được thông điệp và thay đổi data
+====&gt; <strong>chỉ thằng nào giữ dữ liệu mới được xóa dữ liệu<strong><br /></strong></strong></li>
+</ul>
+
+<p>————–<strong>referen trong vue</strong>————-<br /></p>
+<ul>
+  <li>hiểu đơn giản là thay vì custom ô input mặc định . ta tạo 1 ô input mới dễ custom hơn sau đó sử dụng refs của vuejs để gọi đến nút input ban đầu</li>
+  <li>ví dụ :
+     this.$refs.fileInputAvatar.click()<br /></li>
+</ul>
+
+<p>——-<strong>slot trong vuejs</strong>————<br /></p>
+
+<ul>
+  <li>gửi html qua component</li>
+  <li>ví dụ:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">&lt;</span><span class="n">component</span><span class="o">&gt;</span><span class="no">HTML</span><span class="o">&lt;</span><span class="sr">/component&gt; =&gt; son : &lt;slot&gt;&lt;/s</span><span class="n">lot</span><span class="o">&gt;</span> <span class="o">==&gt;</span> <span class="n">son</span> <span class="p">:</span> <span class="no">HTML</span></code></pre></figure>
+
+<p>——————-<strong>lifecycle Diagram</strong>——————–<br /></p>
+
+<ul>
+  <li><strong>Một số tài liệu thao khảo thêm</strong> <br /></li>
+</ul>
+
+<p>Tutorial : <a href="https://youtu.be/q1CNKjPPfdc">zendVN</a></p>
+
+<p>GitHub : <a href="https://github.com/pytutorial/html_samples/tree/master/vuejs">Sample</a></p>
+
+:ET

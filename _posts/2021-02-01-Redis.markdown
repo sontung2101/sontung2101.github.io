@@ -1,0 +1,16 @@
+---
+layout: post
+title: "What is Redis ?"
+date: 2021-02-01 11:00:18 +0700
+image: redis2.png
+tags: [redis, redis notes]
+categories: redis
+---
+<p><span style="font-size: 14pt; font-family: 'comic sans ms', sans-serif;"><strong><span style="color: #ff0000;">Redis</span> l&agrave; t&ecirc;n viết tắt của Remote Dictionary Server, l&agrave; kho lưu trữ dữ liệu dạng key-value trong RAM.&nbsp;</strong></span></p>
+<p><span style="font-size: 14pt; font-family: 'comic sans ms', sans-serif;"><strong>Thay v&igrave; việc phải query v&agrave;o database sẽ hết rất nhiều thời gian th&igrave; d&ugrave;ng cache sẽ lưu dữ liệu trong Ram v&agrave; lấy ra nhanh hơn rất nhiều .&nbsp;</strong></span></p>
+<p><span style="font-size: 14pt; font-family: 'comic sans ms', sans-serif;"><strong>Redis l&agrave; cache sever chỉ để lưu dữ liệu , redis vừa lưu dữ liệu v&agrave;o ram vừa v&agrave;o ổ cứng ph&ograve;ng trường hợp cần phục hồi .</strong></span></p>
+<p><span style="background-color: #ffffff; font-size: 14pt; color: #ff0000; font-family: 'comic sans ms', sans-serif;">***</span></p>
+<p><span style="background-color: #ffffff; font-size: 14pt; color: #ff0000; font-family: 'comic sans ms', sans-serif;"><strong>NOTE</strong> : <span style="color: #000000;"><strong>nếu c&oacute; nhiều server c&ugrave;ng kết nối đến 1 con DB . Thay v&igrave; kết nối đến DB n&oacute; nặng qu&aacute; l&acirc;u qu&aacute; .th&igrave; sẽ c&oacute; 1 cache server ri&ecirc;ng (ở đ&acirc;y ch&iacute;nh l&agrave; Redis) trong n&agrave;y sẽ lưu sẵn dữ liệu . khi c&oacute; reuqest sẽ v&agrave;o đ&acirc;y t&igrave;m dữ liệu nếu ko c&oacute; mới query tới DB sau khi query tới DB th&igrave; dưới Redis sẽ lưu lại cache để cho lần sau&nbsp;</strong></span></span></p>
+<p><span style="color: #000000; font-family: 'comic sans ms', sans-serif;"><strong><span style="background-color: #ffffff; font-size: 14pt;">- thời lượng lưu cache dựa v&agrave;o lập tr&igrave;nh vi&ecirc;n x&aacute;c định nhưng nếu qua l&acirc;u dữ liệu c&oacute; thể bị lỗi thời&nbsp;</span></strong></span></p>
+<p><span style="background-color: #ffffff; font-size: 14pt; color: #ff0000; font-family: 'comic sans ms', sans-serif;">***</span></p>
+<p><span style="font-size: 14pt; font-family: 'comic sans ms', sans-serif;">Tham khảo tại :&nbsp;<a href="https://www.youtube.com/watch?v=noZzKwWVHc0" target="_blank">Toidicodedao</a></span></p>
