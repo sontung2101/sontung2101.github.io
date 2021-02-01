@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Docker command line"
+title: "Deploy Django and Heroku"
 date: 2021-02-01 11:10:18 +0700
 image: deploy2.png
 tags: [django, deploy,heroku]
