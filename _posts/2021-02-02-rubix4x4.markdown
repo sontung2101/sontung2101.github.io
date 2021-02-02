@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Rubik Example Solve"
+date: 2021-02-01 11:08:18 +0700
+image: rb4x4.jpg
+tags: [rubik]
+categories: rubik
+---
+<p><span style="font-size: 14pt;">Rubik-Example-Solve:&nbsp;<a href="https://drfblog.github.io/4x4">Click here</a></span></p>
+<div id="gtx-trans" style="position: absolute; left: 94px; top: -17.0057px;">&nbsp;</div>
